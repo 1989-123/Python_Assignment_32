@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image gallary</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .image-gallary {
+            width: auto;
+            height: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content:space-around;
+            background-color: #114660;
+        }
+        .item {
+            width: 300px;
+            height: 300px;
+            margin: 10px 10px;
+        }
+        #item-1 {
+            background-image: url('/images/photo-1664841274717-821956529d09.avif');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        #item-2 {
+            background-image: url('/images/photo-1663324883004-593451448aa5.avif');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        #item-3 {
+            background-image: url('/images/photo-1663669641581-beeced775595.avif');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        #item-4 {
+            background-image: url('/images/photo-1664025345042-3365677e8a92.avif');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        .item:hover {
+            transition: 2s;
+            transform: scale(1.2, 1.2);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="image-gallary">
+        <div class="item" id="item-1"></div>
+        <div class="item" id="item-2"></div>
+        <div class="item" id="item-3"></div>
+        <div class="item" id="item-4"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bouncing ball</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        background-color: #14213d;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+      }
+      .ball {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        background-color: #7337df;
+        position: relative;
+        position: relative;
+        animation: mymove 2s linear infinite;
+        animation-timing-function:ease-in-out;
+      }
+      @keyframes mymove {
+        0% {
+          margin-top: 0px;
+        }
+        100% {
+          margin-top: 450px;
+          background-color: fuchsia;
+          box-shadow: 5px 15px 35px silver;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="ball"></div>
+    </div>
+  </body>
+</html>
